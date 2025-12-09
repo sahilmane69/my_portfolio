@@ -97,9 +97,9 @@ export default function Info() {
     <div className="min-h-screen relative overflow-hidden -mt-10">
       {/* Background Image Section */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 dark:from-gray-100 dark:via-gray-200 dark:to-gray-300">
+        <div className="w-full h-full bg-white dark:bg-black">
           {/* Placeholder for background image - you can replace this with an actual image */}
-          <div className="w-full h-full opacity-20 dark:opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGRkIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')]"></div>
+          <div className="w-full h-full opacity-20 dark:opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGRkIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] dark:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')]"></div>
         </div>
       </div>
 
@@ -114,7 +114,7 @@ export default function Info() {
           {/* Large Name Text with Animation */}
           <h1
             ref={titleRef}
-            className="text-7xl md:text-9xl lg:text-[12rem] font-light mb-8 tracking-tight leading-none cursor-default inline-block"
+            className="text-7xl md:text-9xl lg:text-[12rem] font-light mb-8 tracking-tight leading-none cursor-default inline-block text-gray-900 dark:text-gray-100"
           >
             {renderText('Sahil Mane', '', 300)}
           </h1>
@@ -125,7 +125,7 @@ export default function Info() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-sm md:text-base uppercase tracking-wider text-gray-600 dark:text-gray-600 font-light mb-4"
+              className="text-sm md:text-base uppercase tracking-wider text-gray-600 dark:text-gray-400 font-light mb-4"
             >
               Full Stack Developer
             </motion.div>
@@ -134,7 +134,7 @@ export default function Info() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-2xl md:text-4xl lg:text-5xl font-light leading-tight max-w-4xl text-gray-900 dark:text-gray-900"
+              className="text-2xl md:text-4xl lg:text-5xl font-light leading-tight max-w-4xl text-gray-900 dark:text-gray-100"
             >
               Building modern web experiences
             </motion.p>
@@ -143,7 +143,7 @@ export default function Info() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="text-2xl md:text-4xl lg:text-5xl font-light leading-tight max-w-4xl text-gray-700 dark:text-gray-700"
+              className="text-2xl md:text-4xl lg:text-5xl font-light leading-tight max-w-4xl text-gray-700 dark:text-gray-300"
             >
               with clean code and thoughtful design.
             </motion.p>
@@ -153,7 +153,7 @@ export default function Info() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="mt-12 md:mt-20 space-y-8 text-base md:text-lg font-light text-gray-600 dark:text-gray-600 max-w-3xl"
+              className="mt-12 md:mt-20 space-y-8 text-base md:text-lg font-light text-gray-600 dark:text-gray-300 max-w-3xl"
             >
               <div className="space-y-4">
                 <p>
@@ -165,8 +165,8 @@ export default function Info() {
               </div>
 
               {/* Learning Journey */}
-              <div className="pt-8 border-t border-gray-300 dark:border-gray-300">
-                <h2 className="text-2xl md:text-3xl font-light mb-6 text-gray-900 dark:text-gray-900">
+              <div className="pt-8 border-t border-gray-300 dark:border-gray-700">
+                <h2 className="text-2xl md:text-3xl font-light mb-6 text-gray-900 dark:text-gray-100">
                   How I Learned
                 </h2>
                 <div className="space-y-4">
@@ -183,40 +183,40 @@ export default function Info() {
               </div>
 
               {/* Resources */}
-              <div className="pt-8 border-t border-gray-300 dark:border-gray-300">
-                <h2 className="text-2xl md:text-3xl font-light mb-6 text-gray-900 dark:text-gray-900">
+              <div className="pt-8 border-t border-gray-300 dark:border-gray-700">
+                <h2 className="text-2xl md:text-3xl font-light mb-6 text-gray-900 dark:text-gray-100">
                   Resources & Tools
                 </h2>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg font-light mb-3 text-gray-800 dark:text-gray-800">
+                    <h3 className="text-lg font-light mb-3 text-gray-800 dark:text-gray-200">
                       Learning Platforms
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-400">
                       FreeCodeCamp, MDN Web Docs, JavaScript.info, React Documentation, Next.js Documentation, TypeScript Handbook, and various YouTube channels focused on web development.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-light mb-3 text-gray-800 dark:text-gray-800">
+                    <h3 className="text-lg font-light mb-3 text-gray-800 dark:text-gray-200">
                       Development Tools
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-400">
                       VS Code, Git & GitHub, Chrome DevTools, Postman, Docker, and various CLI tools. I also use design tools like Figma for UI/UX work.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-light mb-3 text-gray-800 dark:text-gray-800">
+                    <h3 className="text-lg font-light mb-3 text-gray-800 dark:text-gray-200">
                       Technologies & Frameworks
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-400">
                       React, Next.js, Node.js, TypeScript, Python, PostgreSQL, MongoDB, Express.js, Tailwind CSS, Framer Motion, GSAP, and various other libraries and frameworks.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-light mb-3 text-gray-800 dark:text-gray-800">
+                    <h3 className="text-lg font-light mb-3 text-gray-800 dark:text-gray-200">
                       Community & Learning
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-400">
                       Active participation in developer communities, reading technical blogs, following industry leaders, and contributing to open-source projects have been invaluable in my learning journey.
                     </p>
                   </div>

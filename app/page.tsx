@@ -144,7 +144,7 @@ export default function Home() {
         
         <h1
           ref={titleRef}
-          className="text-5xl md:text-7xl font-light mb-8 tracking-tight cursor-default inline-block"
+          className="text-5xl md:text-7xl font-light mb-8 tracking-tight cursor-default inline-block text-gray-900 dark:text-gray-100"
         >
           {renderText('Sahil Mane', '', 300)}
         </h1>
@@ -153,7 +153,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-sm text-gray-500 dark:text-gray-500 font-mono"
+          className="text-sm text-gray-500 dark:text-gray-400 font-mono"
         >
           {time}
         </motion.div>

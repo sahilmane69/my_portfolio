@@ -57,7 +57,7 @@ export default function Work() {
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto"
       >
-        <h1 className="text-4xl md:text-6xl font-light mb-20 tracking-tight">Work</h1>
+        <h1 className="text-4xl md:text-6xl font-light mb-20 tracking-tight text-gray-900 dark:text-gray-100">Work</h1>
         
         <div className="space-y-24 md:space-y-32">
           {projects.map((project, index) => (
@@ -71,7 +71,7 @@ export default function Work() {
               <Link href={`/work/${project.id}`} className="block">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-12 mb-6">
                   <div className="flex-1">
-                    <h2 className="text-4xl md:text-6xl font-light mb-3 tracking-tight group-hover:opacity-60 transition-opacity">
+                    <h2 className="text-4xl md:text-6xl font-light mb-3 tracking-tight group-hover:opacity-60 transition-opacity text-gray-900 dark:text-gray-100">
                       {project.title}
                     </h2>
                     {project.subtitle && (
@@ -89,7 +89,7 @@ export default function Work() {
                     </span>
                   </div>
                 </div>
-                <div className="w-full h-[500px] md:h-[600px] bg-gray-100 dark:bg-gray-800 overflow-hidden group-hover:opacity-90 transition-opacity">
+                <div className="w-full h-[500px] md:h-[600px] bg-gray-100 dark:bg-gray-900 overflow-hidden group-hover:opacity-90 transition-opacity">
                   <div className="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-600 text-sm">
                     Image Placeholder
                   </div>

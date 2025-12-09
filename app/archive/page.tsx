@@ -18,7 +18,7 @@ export default function Archive() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
-        <h1 className="text-4xl md:text-6xl font-light mb-16 tracking-tight">Archive</h1>
+        <h1 className="text-4xl md:text-6xl font-light mb-16 tracking-tight text-gray-900 dark:text-gray-100">Archive</h1>
         
         <div className="space-y-8">
           {archiveItems.map((item, index) => (
@@ -31,7 +31,7 @@ export default function Archive() {
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                 <div>
-                  <h3 className="text-xl font-light mb-1">{item.title}</h3>
+                  <h3 className="text-xl font-light mb-1 text-gray-900 dark:text-gray-100">{item.title}</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">{item.type}</p>
                 </div>
                 <span className="text-sm text-gray-400 dark:text-gray-500">{item.year}</span>
