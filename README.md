@@ -1,68 +1,73 @@
-# Portfolio Website
+Portfolio Website
 
-A minimalist portfolio website inspired by etienne.studio, built with Next.js, TypeScript, and Tailwind CSS.
+A clean and minimal portfolio built with Next.js, TypeScript, and Tailwind CSS — inspired by etienne.studio.
 
-## Features
+<div align="center"> <img src="public/Screenshot 2025-12-10 at 12.03.09 AM.png" alt="Portfolio Screenshot" width="600"/> </div>
+Features
 
-- ✨ Smooth animations using Framer Motion
-- 🌙 Dark mode support
-- 📱 Fully responsive design
-- ⚡ Fast and optimized with Next.js
-- 🎨 Clean and minimal design
+Smooth animations (Framer Motion)
 
-## Getting Started
+Dark mode
 
-First, install the dependencies:
+Fully responsive
 
-```bash
+Fast and optimized
+
+Simple, minimal UI
+
+Getting Started
+
+Install dependencies:
+
 npm install
-# or
-yarn install
-# or
-pnpm install
-```
 
-Then, run the development server:
 
-```bash
+Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Project Structure
+Visit: http://localhost:3000
 
-- `/app` - Next.js app router pages and layouts
-- `/components` - Reusable React components
-- `/public` - Static assets
+Project Structure
 
-## Customization
+/app – Pages, layouts
 
-- Update your name and title in `app/page.tsx`
-- Add your projects in `app/work/page.tsx`
-- Update contact information in `components/Footer.tsx`
-- Modify colors and styles in `app/globals.css` and Tailwind config
+/components – Reusable UI components
 
-## Build
+/public – Images & static assets
 
-To create a production build:
+Customize
 
-```bash
+Change name/title → app/page.tsx
+
+Edit work/projects → app/work/page.tsx
+
+Update contact info → components/Footer.tsx
+
+Modify styles → globals.css and tailwind.config.ts
+
+Build for Production
 npm run build
 npm start
-```
 
-## Tech Stack
+Tech Stack
 
-- Next.js 14
-- React 18
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- next-themes
+Next.js 14
 
-# my_portfolio
+React 18
+
+TypeScript
+
+Tailwind CSS
+
+Framer Motion
+
+next-themes
+
+If you want, I can also make:
+✅ A more aesthetic README
+✅ A professional GitHub README badge layout
+✅ Add a live demo + deployment section
+
+Just tell me!
