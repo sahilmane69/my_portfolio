@@ -21,7 +21,7 @@ export default function Footer() {
               Instagram
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/sahilmane74"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-light opacity-50 hover:opacity-100 transition-opacity"
@@ -39,8 +39,8 @@ export default function Footer() {
           </div>
           
           <div className="text-xs text-gray-400 dark:text-gray-500 font-light">
-            <a href="mailto:sahilmane@example.com" className="hover:opacity-70 transition-opacity">
-              sahilmane@example.com
+            <a href="mailto:sahilmanecode@gmail.com" className="hover:opacity-70 transition-opacity">
+              sahilmanecode@gmail.com
             </a>
           </div>
         </div>
