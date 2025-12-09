@@ -1,12 +1,10 @@
 # Portfolio Website
 
-A clean and minimal portfolio built with **Next.js**, **TypeScript**, and **Tailwind CSS** — inspired by etienne.studio.
+A clean and minimal portfolio built with **Next.js**, **TypeScript**, and **Tailwind CSS** 
 
 ![Portfolio Screenshot](public/Screenshot%202025-12-10%20at%2012.03.09%E2%80%AFAM.png)
 
-
 ---
-
 ## Features
 - Smooth animations (Framer Motion)
 - Dark mode support
@@ -14,11 +12,4 @@ A clean and minimal portfolio built with **Next.js**, **TypeScript**, and **Tail
 - Fast and optimized
 - Simple, minimal UI
 
----
 
-## Getting Started
-
-Install dependencies:
-
-```bash
-npm install
