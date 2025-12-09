@@ -174,7 +174,7 @@ export default function Info() {
                     My journey in web development started with curiosity and a drive to build things that matter. I began by learning the fundamentals of HTML, CSS, and JavaScript through online tutorials and hands-on projects.
                   </p>
                   <p>
-                    I've learned through a combination of structured courses, building real-world projects, contributing to open source, and constantly staying updated with the latest technologies and best practices. Each project has been a learning opportunity, teaching me new patterns, architectures, and problem-solving approaches.
+                    I&apos;ve learned through a combination of structured courses, building real-world projects, contributing to open source, and constantly staying updated with the latest technologies and best practices. Each project has been a learning opportunity, teaching me new patterns, architectures, and problem-solving approaches.
                   </p>
                   <p>
                     I believe in learning by doing—building projects, breaking things, fixing them, and iterating. This hands-on approach has helped me understand not just how things work, but why they work that way.
