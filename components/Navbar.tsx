@@ -63,10 +63,35 @@ export default function Navbar() {
             {mounted && (
               <button
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="text-xs font-light opacity-50 hover:opacity-100 transition-opacity"
-                aria-label="Toggle dark mode"
+                className="theme-toggle opacity-50 hover:opacity-100 transition-opacity w-5 h-5 flex items-center justify-center"
+                type="button"
+                title="Toggle theme"
+                aria-label="Toggle theme"
               >
-                {theme === 'dark' ? 'Light' : 'Dark'}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  className={`theme-toggle__around ${theme === 'dark' ? 'theme-toggle__around--dark' : 'theme-toggle__around--light'}`}
+                  viewBox="0 0 32 32"
+                >
+                  <clipPath id="theme-toggle__around__cutout">
+                    <path d="M0 0h42v30a1 1 0 00-16 13H0Z" />
+                  </clipPath>
+                  <g clipPath="url(#theme-toggle__around__cutout)">
+                    <circle cx="16" cy="16" r="8.4" />
+                    <g>
+                      <circle cx="16" cy="3.3" r="2.3" />
+                      <circle cx="27" cy="9.7" r="2.3" />
+                      <circle cx="27" cy="22.3" r="2.3" />
+                      <circle cx="16" cy="28.7" r="2.3" />
+                      <circle cx="5" cy="22.3" r="2.3" />
+                      <circle cx="5" cy="9.7" r="2.3" />
+                    </g>
+                  </g>
+                </svg>
               </button>
             )}
           </div>

@@ -36,7 +36,21 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
-  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme toggle button styling */
+.theme-toggle__around {
+  cursor: pointer;
+  color: currentColor;
+  transition: transform 750ms ease;
+}
+
+.theme-toggle__around--dark {
+  transform: rotate(0deg);
+}
+
+.theme-toggle__around--light {
+  transform: rotate(180deg);
 }
 
 a {
