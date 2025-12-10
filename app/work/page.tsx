@@ -4,10 +4,6 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
-
 const projects = [
   { 
     id: 1, 
@@ -81,6 +77,9 @@ export default function Work() {
 
   useEffect(() => {
     if (typeof window === 'undefined') return
+
+    // Register ScrollTrigger only on client side
+    gsap.registerPlugin(ScrollTrigger)
 
     const cardWrappers = gsap.utils.toArray('.card-wrapper') as HTMLElement[]
     const cards = gsap.utils.toArray('.card') as HTMLElement[]
