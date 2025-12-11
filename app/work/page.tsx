@@ -7,12 +7,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const projects = [
   { 
     id: 1, 
-    title: 'Project One', 
+    title: 'Analyze your resume with AI', 
     year: '2024',
-    categories: 'Web Development, Full Stack',
+    categories: 'get instant feedback on structure, tone, content, and ATS (Applicant Tracking System) compatibility.',
     subtitle: 'A modern web application',
-    link: '',
-    image: '/project-1.jpg' // Add your project images here
+    link: 'https://github.com/sahilmane69/ai-resume-analyzer',
+    image: 'app\projectimg\p1.png' // Add your project images here
   },
   { 
     id: 2, 
