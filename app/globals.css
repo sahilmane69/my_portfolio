@@ -79,3 +79,15 @@ a:hover {
     url('/wallhaven-8g5w52.png');
 }
 
+.contact-gradient {
+  background: linear-gradient(135deg, #ffe0e0, #ffb367, #ffe27a);
+  background-size: 200% 200%;
+  animation: contactGradientShift 12s ease infinite;
+}
+
+@keyframes contactGradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+

@@ -28,6 +28,7 @@ export default function Navbar() {
     { href: '/work', label: 'Work' },
     { href: '/archive', label: 'Archive' },
     { href: '/info', label: 'Info' },
+    { href: '/contact', label: 'Contact' },
   ]
 
   return (
