@@ -128,23 +128,30 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-6">
+    <div className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center px-6 overflow-hidden">
+      {/* Background Image - only visible in dark mode */}
+      <div className="absolute inset-0 z-0 hero-background">
+        {/* Dark mode overlay - darker gradient for better text readability */}
+        <div className="absolute inset-0 bg-transparent dark:bg-gradient-to-b dark:from-black/50 dark:via-black/60 dark:to-black/70 transition-all duration-700"></div>
+      </div>
+      
+      {/* Content */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center"
+        className="text-center relative z-10"
       >
         <p
           ref={subtitleRef}
-          className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-6 font-light cursor-default"
+          className="text-lg md:text-xl mb-6 font-light cursor-default text-gray-600 dark:text-gray-200 dark:drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] transition-colors duration-700"
         >
           {renderText('Full Stack Developer', '', 100)}
         </p>
         
         <h1
           ref={titleRef}
-          className="text-5xl md:text-7xl font-light mb-8 tracking-tight cursor-default inline-block text-gray-900 dark:text-gray-100"
+          className="text-5xl md:text-7xl font-light mb-8 tracking-tight cursor-default inline-block text-gray-900 dark:text-white dark:drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)] transition-colors duration-700"
         >
           {renderText('Sahil Mane', '', 300)}
         </h1>
@@ -153,7 +160,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-sm text-gray-500 dark:text-gray-400 font-mono"
+          className="text-sm font-mono text-gray-500 dark:text-gray-300 dark:drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] transition-colors duration-700"
         >
           {time}
         </motion.div>

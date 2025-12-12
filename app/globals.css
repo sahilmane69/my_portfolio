@@ -63,3 +63,15 @@ a:hover {
   opacity: 0.6;
 }
 
+/* Hero section background - only for dark mode */
+.hero-background {
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dark .hero-background {
+  background-image: url('/wallhaven-8g5w52.png');
+}
+

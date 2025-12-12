@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Sahil Mane - Full Stack Developer Portfolio',
+    name: 'Sahil Mane - Full Stack Developer ',
     short_name: 'Sahil Mane',
     description: 'Full Stack Developer specializing in React, Next.js, Node.js, and TypeScript',
     start_url: '/',
