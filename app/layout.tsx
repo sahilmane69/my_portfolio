@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import StructuredData from '@/components/StructuredData'
+import LoaderOverlay from '@/components/LoaderOverlay'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -93,10 +94,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <StructuredData />
+        <LoaderOverlay />
         <ThemeProvider>
           <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main className="flex-grow pt-10">
+            <main className="flex-grow pt-10 pb-16">
               {children}
             </main>
             <Footer />
