@@ -50,7 +50,7 @@ export default function LoaderOverlay() {
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-white dark:bg-black"
     >
       <div ref={textRef} className="text-5xl md:text-7xl font-light tracking-tight text-gray-900 dark:text-white">
-        Hello
+        Hello, World!
       </div>
     </div>
   )
